@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GifService } from 'src/app/services/gif.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,9 @@ export class HeaderComponent implements OnInit {
   time = new Date();
   clock: any;
 
-  constructor() { }
+  constructor(
+    private gifService: GifService
+  ) { }
 
   ngOnInit(): void {
     this.clock = setInterval(
@@ -23,4 +26,7 @@ export class HeaderComponent implements OnInit {
     clearInterval(this.clock);
   }
 
+  changeGif() {
+    this.gifService.change();
+  }
 }
