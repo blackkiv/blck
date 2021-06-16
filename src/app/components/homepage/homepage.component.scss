@@ -1,0 +1,80 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    
+    aside {
+        border: 2px solid #222;
+        background-color: white;
+        max-width: 400px;
+        position: sticky;
+        color: #222;
+        top: 170px;
+        box-shadow: 10px 10px rgba(0, 0, 0, .12);
+
+        .aside-title {
+            font-size: 1.2em;
+        }
+
+        .aside-body {
+            padding: 10px;
+            width: calc(100% - 30px);
+        }
+    }
+
+    section {
+        width: 100%;
+        max-width: 700px;
+        margin: 70px 70px 70px 0;
+
+        .section-body {
+            border: 2px solid #222;
+            background-color: white;
+            break-inside: void;
+            position: relative;
+            color: #222;
+            max-width: 500px;
+            width: 96%;
+            box-shadow: 10px 10px rgba(0, 0, 0, .12);
+            margin: 100px auto 150px auto;
+        }
+    }
+}
+
+.title {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-bottom: 2px solid #222;
+}
+
+.body {
+    padding: 10px;
+}
+
+.fa {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-right: 10px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fab {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
