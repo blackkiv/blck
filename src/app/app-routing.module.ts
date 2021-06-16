@@ -5,7 +5,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent, pathMatch: 'full'},
-  { path: 'contanct', component: ContanctsComponent },
+  { path: 'contact', component: ContanctsComponent },
 
   { path: '**', redirectTo: ''}
 ];

@@ -23,6 +23,22 @@ main {
             width: 96%;
             box-shadow: 10px 10px rgba(0, 0, 0, .12);
             margin: 100px auto 150px auto;
+
+            a {
+                text-decoration: none;
+                color: #222;
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+            }
+
+            span {
+                
+                text-rendering: auto;
+                margin: 0 0 0 20px;
+                line-height: 1;
+                font-size: 1.2em;
+            }
         }
     }
 
@@ -55,4 +71,19 @@ main {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
+}
+
+.fab .fas {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+i {
+    margin-left: 10px;
+    width: 15px;
 }
