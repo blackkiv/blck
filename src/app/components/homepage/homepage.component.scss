@@ -44,6 +44,20 @@ main {
             margin: 100px auto 150px auto;
         }
     }
+
+    @media only screen and (max-width: 1200px) {
+        aside {
+            max-width: 500px !important;
+            width: 96% !important;
+            position: relative !important;
+            margin: 70px auto;
+        }
+
+        section {
+            max-width: 100%;
+            margin: auto;
+        }
+    }
 }
 
 .title {
