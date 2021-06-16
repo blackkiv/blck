@@ -51,11 +51,16 @@ main {
             width: 96% !important;
             position: relative !important;
             margin: 70px auto;
+            top: 100px !important;
         }
 
         section {
             max-width: 100%;
             margin: auto;
+
+            .section-body {
+                margin: 50px auto 300px auto !important;
+            }
         }
     }
 }
