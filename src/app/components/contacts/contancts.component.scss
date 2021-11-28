@@ -8,33 +8,9 @@ main {
   margin: auto;
   justify-content: center;
 
-  aside {
-    border: 2px solid #222;
-    background-color: white;
-    max-width: 400px;
-    position: sticky;
-    color: #222;
-    top: 170px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.12);
-
-    .aside-title {
-      font-size: 1.2em;
-    }
-
-    .aside-body {
-      padding: 10px;
-      width: calc(100% - 30px);
-    }
-
-    p {
-      float: right;
-      width: 300px;
-    }
-  }
-
   section {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 70px 70px 70px 0;
 
     .section-body {
@@ -47,25 +23,28 @@ main {
       width: 96%;
       box-shadow: 10px 10px rgba(0, 0, 0, 0.12);
       margin: 100px auto 150px auto;
+
+      a {
+        text-decoration: none;
+        color: #222;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 1;
+      }
+
+      span {
+        text-rendering: auto;
+        margin: 0 0 0 20px;
+        line-height: 1;
+        font-size: 1.2em;
+      }
     }
   }
 
   @media only screen and (max-width: 1200px) {
-    aside {
-      max-width: 500px !important;
-      width: 96% !important;
-      position: relative !important;
-      margin: 70px auto;
-      top: 100px !important;
-    }
-
     section {
       max-width: 100%;
       margin: auto;
-
-      .section-body {
-        margin: 50px auto 300px auto !important;
-      }
     }
   }
 }
@@ -93,7 +72,7 @@ main {
   line-height: 1;
 }
 
-.fab {
+.fab .fas {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 900;
@@ -101,4 +80,9 @@ main {
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
+}
+
+i {
+  margin-left: 10px;
+  width: 15px;
 }

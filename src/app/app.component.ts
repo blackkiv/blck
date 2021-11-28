@@ -6,17 +6,15 @@ import { GifService } from './services/gif.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   host: {
-    "[style.background-image]":"gif"
-  }
+    '[style.background-image]': 'gif',
+  },
 })
 export class AppComponent implements OnInit {
   title = 'blck';
 
   gif: string = '';
 
-  constructor(
-    private gifService: GifService
-  ) { }
+  constructor(private gifService: GifService) {}
 
   ngOnInit(): void {
     this.bodyBackgroundImage();
@@ -24,7 +22,10 @@ export class AppComponent implements OnInit {
 
   bodyBackgroundImage() {
     this.gifService.gif$.subscribe(
-      result => this.gif = result ? 'url("https://media.giphy.com/media/KZFrf9JusXzmpnPsT6/giphy.gif")' : ''
+      (result) =>
+        (this.gif = result
+          ? 'url("https://media.giphy.com/media/KZFrf9JusXzmpnPsT6/giphy.gif")'
+          : '')
     );
   }
 }

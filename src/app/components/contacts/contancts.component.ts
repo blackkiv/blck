@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-contancts',
   templateUrl: './contancts.component.html',
-  styleUrls: ['./contancts.component.scss']
+  styleUrls: ['./contancts.component.scss'],
 })
-export class ContanctsComponent implements OnInit {
+export class ContactsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

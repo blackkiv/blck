@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ContanctsComponent } from './components/contancts/contancts.component';
+import { ContactsComponent } from './components/contacts/contancts.component';
 import { DownloadComponent } from './components/download/download.component';
 
 @NgModule({
@@ -13,14 +13,11 @@ import { DownloadComponent } from './components/download/download.component';
     AppComponent,
     HomepageComponent,
     HeaderComponent,
-    ContanctsComponent,
-    DownloadComponent
+    ContactsComponent,
+    DownloadComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
